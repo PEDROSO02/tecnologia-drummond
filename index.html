@@ -1,4 +1,4 @@
-p<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -47,6 +47,34 @@ p<!DOCTYPE html>
             padding: 10px 0;
             margin-top: 20px;
         }
+        /* Estilos dos botões */
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #483D8B; /* Cor padrão dos botões */
+            border: none;
+            border-radius: 8px; /* Cantos arredondados */
+            cursor: pointer;
+            text-decoration: none; /* Remove o sublinhado */
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #6A5ACD; /* Cor ao passar o mouse */
+        }
+        @media screen and (max-width: 600px) {
+            .button {
+                width: 100%; /* Botões ocupam a largura total em dispositivos móveis */
+                box-sizing: border-box;
+            }
+        }
     </style>
 </head>
 <body>
@@ -82,9 +110,18 @@ p<!DOCTYPE html>
     </section>
     <section>
         <h2>Cibersegurança</h2>
-        <p> A cibersegurança é a área responsável por proteger, gerenciar e estudar como manipular os dados e sistemas para garantir que eles não sejam vazados ou utilizados para funções prejudiciais para a segurança pública ou individual dentro do contexto virtual.</p>
-        <p>Na atualidade, a internet é um ambiente onde inúmeros dados e conteúdos são distribuídos, sendo usados por empresas, governos, grupos, comunidades e indivíduos. Todos esses aspectos demonstram a importância de proteger esses dados, para que os sistemas e as estruturas sociais e digitais possam continuar funcionando do jeito que foram planejadas, sem prejudicar os usuários.
-<footer>
+        <p>A cibersegurança é a área responsável por proteger, gerenciar e estudar como manipular os dados e sistemas para garantir que eles não sejam vazados ou utilizados para funções prejudiciais para a segurança pública ou individual dentro do contexto virtual.</p>
+        <p>Na atualidade, a internet é um ambiente onde inúmeros dados e conteúdos são distribuídos, sendo usados por empresas, governos, grupos, comunidades e indivíduos. Todos esses aspectos demonstram a importância de proteger esses dados, para que os sistemas e as estruturas sociais e digitais possam continuar funcionando do jeito que foram planejadas, sem prejudicar os usuários.</p>
+    </section>
+    
+    <!-- Botões -->
+    <div class="button-container">
+        <a href="https://github.com/PEDROSO02/tecnologia-drummond" class="button" style="background-color: #483D8B;">GitHub</a>
+        <a href="https://descomplica.com.br/faculdade/teste-vocacional/?utm_source=google&utm_medium=cpc&utm_campaign=psq-nonbrand-faculdade-teste-vocacional&utm_term=teste%20vocacional%20gratuito&utm_content=teste-vocacional&gad_source=1&gclid=CjwKCAjw0aS3BhA3EiwAKaD2ZUGDNnlwA3KsDZRKPRnHZX9gE9kBB_OYMwrqN1Wyw-1_qq0rzqHwFxoCdqAQAvD_BwE" class="button" style="background-color: #A020F0;">Faça seu teste vocacional</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZuXPUDpzOBrWx6Rt74oV6JD1V7s2mlzzUI99MVTbtyXSQsg/viewform?usp=sf_link" class="button" style="background-color: #483D8B;">Nos Avalie!</a>
+    </div>
+
+    <footer>
         <p>&copy; 2024 Tecnologia da Informação. Todos os direitos reservados.</p>
     </footer>
 </body>
